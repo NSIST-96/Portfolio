@@ -1,10 +1,10 @@
 html {
-  font-size: 14px;
+  font-size: 10px;
 }
 
 @media (min-width: 768px) {
   html {
-    font-size: 16px;
+    font-size: 12px;
   }
 }
 
@@ -15,4 +15,206 @@ html {
 
 body {
   margin-bottom: 60px;
+}
+
+.info {
+    border-radius: 10px;
+    background-color: #ddd;
+    display: flex;
+}
+/* ---Info--- */
+.info-text {
+    margin-left: 30px;
+    font-size: 25px;
+    margin-bottom: 0px;
+} 
+.info-img img{
+    margin: 5px;
+    border-radius: 10px;
+}
+/* --- */
+
+/* ---’обби--- */
+.hobby {
+    margin: 10px 0px;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 1px 10px;
+}
+
+.hobby-list {
+    width: 100%;
+    padding: 0 5px 5px 5px;
+}
+
+.hobby-list td {
+    display: inline-block;
+    padding: 10px;
+    margin: 0 5px 5px 0;
+    font-size: 20px;
+    color: #eee;
+    background-color: #18701f;
+    border-radius: 5px;
+}
+
+.hobby-list td:hover {
+    background-color: #18701fa6;
+}
+/* --- */
+
+/*  */
+.card {
+    padding-left: 10px;
+}
+/*  */
+
+/* ---ќпыт работы--- */
+.card-work_exp {
+    background-color: rgb(233, 205, 145);
+    padding: 0px 10px 10px 10px;
+    margin: 5px 0;
+    border-radius: 10px;
+}
+
+.card-work_exp h2 {
+    padding-top: 10px;
+}
+
+.card-work_exp table {
+    width: 100%;
+    border-radius: 10px;
+    font-size: 20px;
+    /* border: 1px solid #555; */
+    text-align: center;
+}
+
+.card-work_exp th, .card-work_exp td {
+    padding: 5px;
+}
+
+.card-work_exp th {
+    border-bottom: 1px solid black;
+}
+
+.card-work_exp th:hover {
+    background-color: rgb(247, 206, 110);
+    /* border-bottom: 1px solid rgb(133, 57, 57); */
+}
+
+.card-work_exp td:nth-child(1), td:nth-child(2) {
+    border-right: 1px solid #555;
+}
+
+.card-work_exp td:hover {
+    background-color: rgb(247, 206, 110);
+}
+/* --- */
+
+
+/* ---—ообщение на почту--- */
+.email-message {
+    background-color: #e6fff3;
+    border-radius: 10px;
+}
+
+.email-message .btn {
+    margin: 0 0 5px 5px;
+    border-radius: 10px;
+}
+
+.form h2 {
+    padding: 10px;
+    text-align: center;
+}
+
+.form-group {
+    margin: 5px;
+    padding: 0 0 0 5px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 20px;
+}
+
+.form-row {
+    margin-bottom: 10px;
+    display: flex;
+}
+
+.form-row .form-group {
+    /* display: inline-block; */
+    margin-right: 20px;
+    width: 50%;
+}
+/* --- */
+
+/* --- нопки--- */
+.btn {
+    color: #fff;
+    background-color: #111;
+    padding: 15px 20px;
+    font-size: medium;
+}
+
+.btn:hover {
+    opacity: .8;
+    color: rgb(248, 188, 77);
+}
+/* --- */
+
+/* ---—сылки--- */
+a {
+    /*color: #fff;*/
+    padding-left: 5px;
+    padding-right: 5px;
+    /*background-color: #111;*/
+    text-decoration: none;
+}
+
+    a:hover {
+        text-decoration: underline;
+        background-color: #DDD;
+        color: rgb(248, 188, 77);
+    }
+
+    a:active {
+        color: blue;
+    }
+/* a:visited{
+    color:rgba(141, 108, 202, 0.493)
+} */
+/* --- */
+/* --- */
+@media (max-width: 700px) {
+    .form-row {
+        display: block;
+    }
+
+    .form-row .form-group {
+        width: 100%;    
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    box-sizing: border-box;
+    border: none;
+    background: transparent;
+    border-bottom: 1px solid #ccc;
+    color: #000;
+    padding: 15px 0 10px;
+    outline: none;
+    font-family: inherit;
+    font-size: 20px;
+}
+
+@media (max-width: 1040px) {
+    .info {
+        display: block;
+        text-align: center;
+    }
 }
